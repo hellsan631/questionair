@@ -1,0 +1,25 @@
+{
+  "name": "Question",
+  "plural": "questions",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "text": "string",
+    "type": "string",
+    "order": "number"
+  },
+  "validations": [],
+  "relations": {
+    "parent": {
+      "type": "belongsTo",
+      "model": "Answer"
+    },
+    "children": {
+      "type": "hasMany",
+      "model": "Answer",
+      "foreignKey": "parentId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}
