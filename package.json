@@ -22,7 +22,6 @@
     "type": "",
     "url": ""
   },
-  "description": "todo-app",
   "scripts": {
     "start": "node server/server.js",
     "postinstall": "bower install"
